@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "This is the third iteration of my personal website",
   "main": "index.html",
-  "dependencies": {},
+  "dependencies": {
+    "fullpage.js": "^3.0.8"
+  },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
