@@ -9,7 +9,6 @@
   <!-- CSS  -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="./css/fullpage.css">
   <!-- JS  -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -20,27 +19,46 @@
 
 <body>
   <div id="fullpage">
-    <div class="section" data-anchor="Home">
-      <h1>Dharmin Chauhan</h1>
-      <h3>Web Developer</h3>
+    <div class="section " data-anchor="Home">
+      <div class=" Home">
+        <h1>Dharmin Chauhan</h1>
+        <h3>Web Developer</h3>
+      </div>
     </div>
-    <div class="section" data-anchor="About">
-      <h3>Hard-working Web Developer with an eagerness to learn. My current stack includes Front-End Languages such as HTML, CSS, Javascript and Back-end Languages such as Node, MySQL, PHP. I am looking for an opportunity to put my skills to the test
-        and contribute to something worthwhile.</h3>
+    <div class="section " data-anchor="About">
+      <div class=" About">
+        <div class="container">
+          <h3>Hard-working Web Developer with an eagerness to learn. My current stack includes Front-End Languages such as HTML, CSS, Javascript and Back-end Languages such as Node, MySQL, PHP. I am looking for an opportunity to put my skills to the
+            test
+            and contribute to something worthwhile.
+          </h3>
+        </div>
+        </h3>
+      </div>
     </div>
-    <div class="section" data-anchor="Projects">
-      <h1>Projects</h1>
-      <div class="slide" data-anchor="slide1"> Slide 1 </div>
-      <div class="slide" data-anchor="slide2"> Slide 2 </div>
-      <div class="slide" data-anchor="slide3"> Slide 3 </div>
-      <div class="slide" data-anchor="slide4"> Slide 4 </div>
+  </div>
+  <div class="section " data-anchor="Projects">
+    <div class="slide" data-anchor="slide1">
+      <div class=" Projects">Slide 1</div>
     </div>
-    <div class="section" data-anchor="Contact">
+    <div class="slide" data-anchor="slide2">
+      <div class=" Projects">Slide 2</div>
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <div class=" Projects">Slide 3</div>
+    </div>
+    <div class="slide" data-anchor="slide4">
+      <div class=" Projects">Slide 4</div>
+    </div>
+  </div>
+  <div class="section " data-anchor="Contact">
+    <div class=" Contact">
       <h1>Get in touch with me!</h1>
       <span class="contact-point">Email</span>
       <span class="contact-point">LinkedIn</span>
       <span class="contact-point">Github</span>
     </div>
+  </div>
   </div>
 
 </body>
@@ -54,8 +72,9 @@
       anchors: ['Home', 'About', 'Projects', 'Contact'],
       navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
       sectionsColor: ['#1e698d', '#1e698d', '#1e698d', '#1e698d'],
-      slidesNavigatin: true,
-      slidesNavPosition: 'bottom'
+      slidesNavigation: true,
+      slidesNavPosition: 'bottom',
+      controlArrows: false,
 
     });
   })
