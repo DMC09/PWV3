@@ -1,5 +1,21 @@
 
+#fullpage {
 
-p {
-  color:blue;
+}
+
+h1 {
+  color: #c2d5db;
+  font-size: 2rem!important;
+
+}
+
+span {
+  background:  white !important;
+  font-size: 2rem;
+}
+
+.active {
+  span{
+    background:  red !important;
+  }
 }

@@ -19,8 +19,35 @@
 
 
 <body>
-  <p>test</p>
+  <div id="fullpage">
+    <div class="section" data-anchor="Home">
+      <h1>Home</h1>
+    </div>
+    <div class="section" data-anchor="About">
+      <h1>About</h1>
+    </div>
+    <div class="section" data-anchor="Projects">
+      <h1>Projects</h1>
+    </div>
+    <div class="section" data-anchor="Contact">
+      <h1>Contact</h1>
+    </div>
+  </div>
 
 </body>
+
+<script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      scrollingSpeed: 800,
+      // menu: '#menu',
+      navigation: true,
+      anchors: ['Home', 'About', 'Projects', 'Contact'],
+      navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
+      sectionsColor: ['#1e698d', '#1e698d', '#1e698d', '#1e698d']
+
+    });
+  })
+</script>
 
 </html>
