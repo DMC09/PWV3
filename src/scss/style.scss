@@ -70,6 +70,10 @@ h3.sub-heading {
 
       a {
         color: $link;
+
+        &:hover {
+          color: white;
+        }
       }
     }
   }
@@ -131,9 +135,10 @@ i.fab {
       transition: all 0.5s ease-in-out;
 
       &:hover {
-        color: $link;
+        color: $ternary;
       }
     }
+
     a:first-child {
       border-right: 1px solid black;
     }
