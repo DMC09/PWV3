@@ -1,9 +1,15 @@
+// Varaibles
+$base: #1e698d;
+$secondary: #789fbb;
+$ternary: #c2d5db;
+$link: #282828;
+
 #fullpage {
   .section {
-    outline: 1px solid black;
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
   }
 }
 
@@ -11,38 +17,76 @@
 .Contact,
 .Home,
 .Projects {
-  outline: 1px solid black;
   display: flex;
   height: 100%;
   justify-content: center;
   flex-flow: column;
   align-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .container {
+  display: flex;
+  text-align: justify;
+  width: 75%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+h1.heading {
+  color: $ternary;
+  font-size: 5rem;
+}
+
+h2.bio {
+  color: $ternary;
+  font-size: 3rem;
+}
+
+h3.sub-heading {
+  color: $ternary;
+  font-size: 3rem;
+}
+
+.Contact {
+  .contact-point {
+
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+    li {
+      margin: 0.75rem 0;
+      text-align: center;
+      color: $link;
+      a{
+        color: $link;
+      }
+    }
+  }
+}
+
+
+i.fab {
   background: red;
-  text-align: center;
-
-}
-
-h1 {
-  color: green;
-  font-size: 6rem !important;
-}
-
-span.contact-point {
-  font-size: 3.5rem;
 }
 
 #fp-nav .active {
   span {
-    background: #789fbb !important;
+    background: $secondary;
   }
 }
 
 .fp-slidesNav .active {
   span {
-    background: #789fbb !important;
+    background: $secondary;
   }
 }
