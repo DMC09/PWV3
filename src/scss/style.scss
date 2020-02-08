@@ -1,8 +1,12 @@
+
+
 // Varaibles
 $base: #1e698d;
 $secondary: #789fbb;
 $ternary: #c2d5db;
 $link: #282828;
+
+
 
 #fullpage {
   .section {
@@ -89,4 +93,23 @@ i.fab {
   span {
     background: $secondary;
   }
+}
+
+.card {
+  outline: 1px solid white;
+  max-width: 90%;
+  max-height: 90%;
+    .card-content{
+      outline: 1px solid white;
+      height: 100%;
+      max-width: 100%;
+      .content{
+        outline: 1px solid white;
+        height: 50%;
+        img{
+          height: 50%;
+          width: 50%;
+        }
+      }
+    }
 }
