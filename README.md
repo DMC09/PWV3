@@ -7,4 +7,4 @@ Personal Portfolio Website.
 
 Build entirely with HTML, CSS and Js
 
-![Homepage](./img/Overview.gif)
+![Homepage](Overview.gif)
