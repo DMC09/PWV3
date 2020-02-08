@@ -1,12 +1,9 @@
-
-
 // Varaibles
 $base: #1e698d;
 $secondary: #789fbb;
 $ternary: #c2d5db;
 $link: #282828;
-
-
+$projback: #939393;
 
 #fullpage {
   .section {
@@ -57,7 +54,6 @@ h3.sub-heading {
 
 .Contact {
   .contact-point {
-
     font-size: 2rem;
     text-align: center;
   }
@@ -71,13 +67,13 @@ h3.sub-heading {
       margin: 0.75rem 0;
       text-align: center;
       color: $link;
-      a{
+
+      a {
         color: $link;
       }
     }
   }
 }
-
 
 i.fab {
   background: red;
@@ -96,20 +92,50 @@ i.fab {
 }
 
 .card {
-  outline: 1px solid white;
-  max-width: 90%;
+  max-width: 75%;
   max-height: 90%;
-    .card-content{
-      outline: 1px solid white;
-      height: 100%;
-      max-width: 100%;
-      .content{
-        outline: 1px solid white;
-        height: 50%;
-        img{
-          height: 50%;
-          width: 50%;
-        }
+
+  header.card-header {
+    margin: 0;
+    background: $ternary;
+    padding: 1rem;
+
+    .card-header-title {
+      margin: 0;
+      font-size: 2rem;
+      color: white;
+    }
+  }
+
+  .card-content {
+    padding: 1rem 0;
+    max-width: 100%;
+    max-height: 90%;
+    background: $link;
+
+    img {
+      width: 75%;
+    }
+  }
+
+  footer {
+    display: flex;
+    background: $ternary;
+    padding: 1rem;
+
+    a {
+      width: 50%;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $link;
       }
     }
+    a:first-child {
+      border-right: 1px solid black;
+    }
+  }
 }
