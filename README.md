@@ -7,4 +7,4 @@ Personal Portfolio Website.
 
 Build entirely with HTML, CSS and Js
 
-![Homepage](src/img/web1.png)
+![Homepage](./src/img/web1.png)
