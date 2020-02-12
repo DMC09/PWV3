@@ -3122,7 +3122,7 @@
                 touchWrapper.removeEventListener(events.touchmove, touchMoveHandler, {passive: false});
 
                 touchWrapper.addEventListener(events.touchstart, touchStartHandler);
-                touchWrapper.addEventListener(events.touchmove, touchMoveHandler, {passive: false});
+                touchWrapper.addEventListener(events.touchmove, touchMoveHandler, {passive: true});
             }
         }
 
