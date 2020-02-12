@@ -3119,7 +3119,7 @@
 
                 var touchWrapper = options.touchWrapper;
                 touchWrapper.removeEventListener(events.touchstart, touchStartHandler);
-                touchWrapper.removeEventListener(events.touchmove, touchMoveHandler, {passive: false});
+                touchWrapper.removeEventListener(events.touchmove, touchMoveHandler, {passive: true});
 
                 touchWrapper.addEventListener(events.touchstart, touchStartHandler);
                 touchWrapper.addEventListener(events.touchmove, touchMoveHandler, {passive: true});
