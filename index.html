@@ -10,26 +10,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dharmin Chauhan</title>
   <!-- CSS  -->
-  <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="stylesheet" href="./src/css/normalize.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./src/css/fullpage.css">
+  <link rel="stylesheet" href="src/css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Lemonada|Rajdhani|Raleway|Ubuntu|Varela+Round&display=swap" rel="stylesheet">
-
   <!-- JS  -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./src/js/fullpage.js"></script>
 
+
 <body>
   <div id="fullpage">
     <div class="section " data-anchor="Home">
-      <div class=" Home">
-        <h1 class="heading">Dharmin Chauhan</h1>
-        <p class="sub-heading">Web Developer</p>
+      <div class="Home">
+        <h1 class="name">Dharmin Chauhan</h1>
+        <p class="occupation">Web Developer</p>
+        <button class="resume" type="button" name="resume">
+          <a href="resume.pdf" target="_blank">Resume</a>
+        </button>
       </div>
     </div>
     <div class="section " data-anchor="About">
-      <div class=" About">
+      <div class="About">
         <div class="container">
           <h2 class="bio">Hard-working Web Developer with an eagerness to learn. My current stack includes Front-End Languages such as HTML, CSS, Javascript and Back-end Languages such as Node, MySQL, PHP. I am looking for an opportunity to put my
             skills to the
@@ -37,7 +40,6 @@
             and contribute to something worthwhile.
           </h2>
         </div>
-        </h3>
       </div>
     </div>
     <div class="section " data-anchor="Projects">
@@ -116,39 +118,41 @@
     </div>
     <div class="section " data-anchor="Contact">
       <div class=" Contact">
-        <h3 class="contact">Get in touch with me!</h1>
-          <span class="contact-point">
-            <ul>
-              <li>Dharminlive1213@gmail.com</li>
-          </span>
+        <h3 class="contact">Get in touch with me!</h3>
+        <ul>
+          <li>Dharminlive1213@gmail.com</li>
           <li>
-            <a href="https://www.linkedin.com/in/dharmin-chauhan-729b59121/ target=" _blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/dharmin-chauhan-729b59121/ target=" _blank" rel="noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </li>
           <li>
-            <a href="https://github.com/dmc09" target="_blank" rel="noreferrer"><i class="fab fa-github-square"></i></a>
+            <a href="https://github.com/dmc09" target="_blank" rel="noreferrer">
+              <i class="fab fa-github-square"></i>
+            </a>
           </li>
-          </ul>
+        </ul>
       </div>
     </div>
   </div>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        scrollingSpeed: 800,
+        // menu: '#menu',
+        navigation: true,
+        anchors: ['Home', 'About', 'Projects', 'Contact'],
+        navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
+        sectionsColor: ['#1e698d', '#1e698d', '#1e698d', '#1e698d'],
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        controlArrows: false,
 
+      });
+    })
+  </script>
 </body>
 
-<script>
-  $(document).ready(function() {
-    $('#fullpage').fullpage({
-      scrollingSpeed: 800,
-      // menu: '#menu',
-      navigation: true,
-      anchors: ['Home', 'About', 'Projects', 'Contact'],
-      navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
-      sectionsColor: ['#1e698d', '#1e698d', '#1e698d', '#1e698d'],
-      slidesNavigation: true,
-      slidesNavPosition: 'bottom',
-      controlArrows: false,
 
-    });
-  })
-</script>
 
 </html>
