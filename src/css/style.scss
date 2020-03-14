@@ -6,14 +6,14 @@ $ternary: #c2d5db;
 $button: #2EA3D9;
 $link: #282828;
 $projback: #939393;
-$navCircle: #43464b;
+$navCircle: #43464b; // Full page customs
 
-// Full page customs
 #fp-nav .active {
   span {
     background: $projback;
   }
 }
+
 .fp-slidesNav .active {
   span {
     background: $projback;
@@ -52,6 +52,7 @@ $navCircle: #43464b;
   align-content: center;
 }
 // Home
+
 h1.name {
   color: $secondary;
   font-size: 6rem;
@@ -68,7 +69,12 @@ button.resume {
   background: white;
   border: none;
   padding: 0.5rem 3rem;
-  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: $button;
+  }
 
   a {
     text-decoration: none;
@@ -77,12 +83,14 @@ button.resume {
   }
 }
 // about
+
 h2.bio {
   color: $ternary;
   font-size: 3rem;
   text-align: justify;
 }
 // projects
+
 .Projects .card {
   max-width: 75%;
   max-height: 90%;
@@ -102,6 +110,7 @@ h2.bio {
     max-width: 100%;
     max-height: 90%;
     background: darken($navCircle, 15%);
+
     img {
       width: 75%;
     }
@@ -109,32 +118,34 @@ h2.bio {
 
   footer {
     display: flex;
-    background: darken($navCircle, 10%);;
+    background: darken($navCircle, 10%);
     padding: 1rem;
 
     a {
       width: 50%;
-      color:  lighten($navCircle, 50%);
+      color: lighten($navCircle, 50%);
       font-size: 1rem;
       text-decoration: none;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         color: $button;
-      
       }
+
       &:first-child {
         border-right: 1px solid black;
       }
     }
-
-
   }
 }
-
-
 // contact
+
 .Contact {
+  h3.contact {
+    font-size: 2.5rem;
+    color: $ternary;
+  }
+
   ul {
     list-style: none;
     text-align: center;
@@ -145,13 +156,40 @@ h2.bio {
       text-align: center;
       color: $link;
 
+      &.email {
+        color: $button;
+        font-size: 1.5rem;
+      }
+
       a {
-        color: $link;
+        color: $navCircle;
+        font-size: 3rem;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
-          color: white;
+          color: $ternary;
         }
       }
     }
+  }
+}
+
+@media (max-width:1024px) {
+  h2.bio{
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  h1.name {
+    color: $secondary;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  h2.bio{
+    font-size: 1.75rem;
+    text-align: center;
   }
 }
