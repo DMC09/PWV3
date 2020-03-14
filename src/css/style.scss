@@ -38,7 +38,7 @@ $projback: #939393;
   align-items: center;
   align-content: center;
 }
-// indv
+// Home
 
 h1.name {
   color: $secondary;
@@ -50,13 +50,12 @@ p.occupation {
   color: $ternary;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-
 }
 
 button.resume {
   background: white;
   border: none;
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   border-radius: 6px;
 
   a {
@@ -65,10 +64,11 @@ button.resume {
     font-size: 1.5rem;
   }
 }
-
+// about
 h2.bio {
   color: $ternary;
-  font-size: 1rem;
+  font-size: 3rem;
+  text-align: justify;
 }
 
 .Contact {
