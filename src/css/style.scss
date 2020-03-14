@@ -6,6 +6,19 @@ $ternary: #c2d5db;
 $button: #2EA3D9;
 $link: #282828;
 $projback: #939393;
+$navCircle: #43464b;
+
+// Full page customs
+#fp-nav .active {
+  span {
+    background: $projback;
+  }
+}
+.fp-slidesNav .active {
+  span {
+    background: $projback;
+  }
+}
 
 #fullpage {
   .section {
@@ -39,7 +52,6 @@ $projback: #939393;
   align-content: center;
 }
 // Home
-
 h1.name {
   color: $secondary;
   font-size: 6rem;
@@ -70,7 +82,58 @@ h2.bio {
   font-size: 3rem;
   text-align: justify;
 }
+// projects
+.Projects .card {
+  max-width: 75%;
+  max-height: 90%;
 
+  header.card-header {
+    padding: 1rem;
+
+    .card-header-title {
+      margin: 0;
+      font-size: 3rem;
+      color: $ternary;
+    }
+  }
+
+  .card-content {
+    padding: 1rem 0;
+    max-width: 100%;
+    max-height: 90%;
+    background: darken($navCircle, 15%);
+    img {
+      width: 75%;
+    }
+  }
+
+  footer {
+    display: flex;
+    background: darken($navCircle, 10%);;
+    padding: 1rem;
+
+    a {
+      width: 50%;
+      color:  lighten($navCircle, 50%);
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $button;
+      
+      }
+      &:first-child {
+        border-right: 1px solid black;
+      }
+    }
+
+
+  }
+}
+
+
+// contact
 .Contact {
   ul {
     list-style: none;
@@ -89,72 +152,6 @@ h2.bio {
           color: white;
         }
       }
-    }
-  }
-}
-
-i.fab {
-  background: red;
-}
-
-#fp-nav .active {
-  span {
-    background: $secondary;
-  }
-}
-
-.fp-slidesNav .active {
-  span {
-    background: $secondary;
-  }
-}
-
-.card {
-  max-width: 75%;
-  max-height: 90%;
-
-  header.card-header {
-    margin: 0;
-    background: $ternary;
-    padding: 1rem;
-
-    .card-header-title {
-      margin: 0;
-      font-size: 1rem;
-      color: white;
-    }
-  }
-
-  .card-content {
-    padding: 1rem 0;
-    max-width: 100%;
-    max-height: 90%;
-    background: $link;
-
-    img {
-      width: 75%;
-    }
-  }
-
-  footer {
-    display: flex;
-    background: $ternary;
-    padding: 1rem;
-
-    a {
-      width: 50%;
-      color: white;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: all 0.5s ease-in-out;
-
-      &:hover {
-        color: $ternary;
-      }
-    }
-
-    a:first-child {
-      border-right: 1px solid black;
     }
   }
 }
