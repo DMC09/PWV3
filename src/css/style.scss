@@ -3,13 +3,9 @@ $main: #072E40;
 $base: #1e698d;
 $secondary: #789fbb;
 $ternary: #c2d5db;
+$button: #2EA3D9;
 $link: #282828;
 $projback: #939393;
-// Overall
-*{
-  font-size: 10px;
-}
-
 
 #fullpage {
   .section {
@@ -42,28 +38,40 @@ $projback: #939393;
   align-items: center;
   align-content: center;
 }
+// indv
 
 h1.name {
+  color: $secondary;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+
+p.occupation {
   color: $ternary;
-  font-size: 5rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+
+}
+
+button.resume {
+  background: white;
+  border: none;
+  padding: .5rem 3rem;
+  border-radius: 6px;
+
+  a {
+    text-decoration: none;
+    color: $main;
+    font-size: 1.5rem;
+  }
 }
 
 h2.bio {
   color: $ternary;
-  font-size: 3rem;
-}
-
-p.occupation {
-  color: $secondary;
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 .Contact {
-  .contact-point {
-    font-size: 2rem;
-    text-align: center;
-  }
-
   ul {
     list-style: none;
     text-align: center;
@@ -112,7 +120,7 @@ i.fab {
 
     .card-header-title {
       margin: 0;
-      font-size: 2rem;
+      font-size: 1rem;
       color: white;
     }
   }
@@ -136,7 +144,7 @@ i.fab {
     a {
       width: 50%;
       color: white;
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-decoration: none;
       transition: all 0.5s ease-in-out;
 
