@@ -7,6 +7,17 @@ $button: #2EA3D9;
 $link: #282828;
 $projback: #939393;
 $navCircle: #43464b; // Full page customs
+@mixin neu-mix {
+  border-radius: 10px;
+background: linear-gradient(145deg, #1c1d20, #212225);
+box-shadow:  5px 5px 10px #141416,
+             -5px -5px 10px #2a2c30;
+}
+@mixin img-mix {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #27282c, #2e2f34);
+  box-shadow:  10px 10px 7px #111214,
+               -10px -10px 7px #45464e;
 
 #fp-nav .active {
   span {
@@ -65,32 +76,8 @@ p.occupation {
   margin-bottom: 2rem;
 }
 
-button.resume {
-  background: white;
-  border: none;
-  padding: 0.5rem 3rem;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
 
-  &:hover {
-    background: $button;
-  }
-  &:before {
-    background: $button;
-    display:inline-block;
-  content:'';
-  position:absolute;
-  left:0;
-  right:0;
-  z-index:-1;
-  }
 
-  a {
-    text-decoration: none;
-    color: $main;
-    font-size: 1.5rem;
-  }
-}
 // about
 
 h2.bio {
@@ -100,9 +87,11 @@ h2.bio {
 }
 // projects
 
-.Projects .card {
+ .card {
   max-width: 75%;
   max-height: 90%;
+  @include neu-mix;
+
 
   header.card-header {
     padding: 1rem;
@@ -110,42 +99,28 @@ h2.bio {
     .card-header-title {
       margin: 0;
       font-size: 3rem;
-      color: $ternary;
+      color: #e2e2e2;
     }
   }
 
   .card-content {
-    padding: 1rem 0;
-    max-width: 100%;
-    max-height: 90%;
-    background: darken($navCircle, 15%);
-
+    padding: 1rem ;
     img {
-      width: 75%;
+      width: 90%;
+      @include img-mix;
+
+
     }
   }
-
-  footer {
+  footer{
     display: flex;
-    background: darken($navCircle, 10%);
-    padding: 1rem;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
 
-    a {
-      width: 50%;
-      color: lighten($navCircle, 50%);
-      font-size: 1rem;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        color: $button;
-      }
-
-      &:first-child {
-        border-right: 1px solid black;
-      }
-    }
   }
+
 }
 // contact
 
@@ -188,6 +163,9 @@ h2.bio {
     font-size: 2rem;
     text-align: center;
   }
+  .card footer{
+    flex-flow: column;
+  }
 }
 
 @media (max-width:768px) {
@@ -200,6 +178,9 @@ h2.bio {
   h2.bio{
     font-size: 1.75rem;
     text-align: center;
+  }
+  .card footer{
+    flex-flow: column;
   }
 }
 
